@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+:root{
+    color-scheme: dark;
+    background: linear-gradient(to bottom right, #491515, #181313);
+}

@@ -1,0 +1,83 @@
+---
+import Estrella from "./icons/Estrella.astro";
+import Rayo from "./icons/Rayo.astro";
+---
+
+<script>
+    document.getElementById("clic")?.addEventListener("click", function () {
+        const texto = document.getElementById("contra");
+        if (texto) {
+            texto.classList.toggle("hidden");
+        }
+    });
+</script>
+
+<div class="h-dvh mx-auto px-4">
+    <section class="flex flex-col justify-center items-center pt-15 pb-7">
+        <button
+            class="relative w-20 transition-all duration-300 filter grayscale focus:grayscale-0 flex pb-2"
+            id="imagen"
+        >
+            <img id="clic" src="/src/assets/caedes.webp" alt="Viejo Caedes" />
+        </button>
+        <div class=" flex flex-col items-center justify-center">
+            <h1 class="text-5xl font-bold text-white text-pretty text-center">
+                Bienvenido a Caedes
+            </h1>
+            <p class="text-lg text-white/80 mt-1 text-pretty">
+                Tu aventura comienza aquí
+            </p>
+        </div>
+    </section>
+    <div class="relative pb-20">
+        <div
+            class="absolute -top-4 left-0 right-0 mx-auto w-fit animate-bounce"
+        >
+            <div
+                class="flex items-center gap-2 bg-gradient-to-r from-[#4e1919] to-[#1f1818] text-white px-4 py-2 rounded-full"
+            >
+                <Estrella />
+                <h1>¡Acceso anticipado!</h1>
+            </div>
+        </div>
+        <div
+            class="bg-gradient-to-tl from-[#552020] to-[#884747] p-8 rounded-2xl border-2 outline-0 border-[#491515]/60 max-w-md mx-auto mb-8 mt-6">
+            <div class="flex items-center justify-center flex-col">
+                <h1
+                    class="text-2xl font-semibold border-b-4 text-center text-pretty border-white/80 rounded-xs"
+                >
+                    Únete a nuestra lista de espera
+                </h1>
+            </div>
+            <form
+                action=""
+                class="flex items-center justify-center  py-3 flex-col gap-5"
+            >
+                <div class="relative w-full">
+                    <input
+                    type="email"
+                    placeholder="Tu correo electrónico"
+                    class="py-3 px-5 rounded-full border-2 w-full focus:border-2 focus:border-[#491515] focus:outline-2 focus:outline-white/80 border-[#792727] bg-white/10"
+                />
+                </div>
+                <div class="relative w-full">
+                    <button
+                    type="submit"
+                    class="py-5 px-5 flex items-center transition-all hover:scale-[1.05] duration-300 justify-center gap-2 w-full text-lg cursor-pointer font-semibold rounded-full bg-gradient-to-r from-[#4e1919] to-[#1f1818]"
+                >
+                    <Rayo />
+                    Unirse a la lista de espera
+                </button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="flex items-center justify-center">
+        <p
+            class="hidden text-3xl tracking-widest font-extrabold text-red-900/20"
+            id="contra"
+        >
+            ΚΑΗΔΗΣ
+        </p>
+    </div>
+</div>
