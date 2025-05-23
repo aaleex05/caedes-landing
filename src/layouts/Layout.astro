@@ -18,7 +18,7 @@ const { title, description } = Astro.props as Props;
 		<title>{title}</title>
 		<meta name="description" content={description} />
 	</head>
-	<body>
+	<body class="bg-gradient-to-r from-[#4e1919] to-[#1f1818]">
 		<slot />
 	</body>
 </html>
@@ -34,19 +34,3 @@ const { title, description } = Astro.props as Props;
 	}
 	
 </style>
-<!-- IMAGEN
-<div
-    class="relative max-w-sm transition-all duration-300 filter grayscale hover:grayscale-0 flex"
-    id="imagen"
->
-    <img id="clic" src="/src/assets/caedes.webp" alt="" />
-</div>
-<div class="flex items-center justify-center">
-    <p
-        class="hidden text-3xl tracking-widest font-extrabold text-red-900/10 pt-10"
-        id="contra"
-    >
-        ΚΑΗΔΗΣ
-    </p>
-</div>
- -->
