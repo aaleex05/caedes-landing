@@ -25,7 +25,17 @@ Este repositorio contiene la landing page del proyecto, desarrollada como trabaj
 
 ---
 
+## 🖼️ Imágenes
 
+A continuación se presentan algunas capturas del diseño de la landing page:
+
+### 📸 Capturas de la landing page
+![762_1x_shots_so](https://github.com/user-attachments/assets/7ed4eb87-3630-4e4b-a835-dcda8949fb40)
+![390shots_so-removebg-preview](https://github.com/user-attachments/assets/77921ddb-fcd5-4a93-9838-cd3b98d84a33) ![860shots_so-removebg-preview](https://github.com/user-attachments/assets/e13ef5a0-6c95-420c-aaa3-7fb1b146e450)
+
+
+
+---
 
 ## 🚧 Futuras Mejoras
 
